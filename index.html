@@ -1,0 +1,126 @@
+<html>
+<head>
+    <title>Professional Projects</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://use.typekit.net/yip5nna.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <script>
+      $(document).ready(function(){
+
+      $("img").click(function(){
+          if ( $('stretchd').toArray().includes($()[0]) ) {
+            $(this).removeClass("stretchd");
+          } else {
+            $("img").removeClass("stretchd");
+            $(this).addClass("zoom");
+          }
+
+        })
+
+      });
+    </script>
+
+    <style>
+
+    .pics img{
+      width: 286px;
+      height: 370px;
+}
+
+    img {
+      -webkit-transition: width 2s, height 6s;
+      width: 20px; /*10000px*/
+      height: 100px; /*900px*/
+    }
+
+    .stretchd {
+      width: 800px;
+      height: 900px;
+      -webkit-transition: width 2s, height 6s;
+    }
+
+    .zoom {
+      width: 350px;
+      height: 200px;
+      top: -4000px
+      right:-3000px;
+      -webkit-transition: width 2s, height 7s;
+    }
+
+      #header p{
+        text-align: center;
+        font-size: 40px;
+        font-family: georgia;
+      }
+
+      p {
+        text-align: center;
+        font-size: 18px;
+        font-family: georgia;
+      }
+
+      div {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 30px;
+        margin-bottom: 50px;
+      }
+
+      ul {
+        display: flex;
+        list-style-type: none;
+
+      }
+
+
+      li {
+        border:none;
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <section id="header"><p>Art</p></section>
+
+    <div class="face"><img src="https://scontent.xx.fbcdn.net/v/t31.0-8/13131378_1070169103054299_2379054614010184333_o.jpg?oh=01d2f90a2aad88a20f37c9e5f3ec5bd6&oe=59106030">
+    </div>
+
+    <ul class="pics">
+
+  <li class="one">
+    <p>design</p>
+    <div id="wood"><img src="https://scontent.xx.fbcdn.net/v/t31.0-8/14706862_1225024007568807_8133263479392824983_o.jpg?oh=e5d50c3712094df0f3dffccf29bc9183&oe=58D737C6">
+    </div>
+
+    <div id="dirt"><img src="http://previewcf.turbosquid.com/Preview/2014/08/01__13_43_05/Dry%20Dirt.jpg5abdefd1-945e-4133-9be1-9c97ad8cf329Larger.jpg">
+    </div>
+  </li>
+
+  <li class="two">
+    <p>prints</p>
+    <div id="cake"><img src="https://scontent.xx.fbcdn.net/v/t1.0-9/14724551_1224988364239038_3446576592733368126_n.jpg?oh=7e5a1f57aacdff80aaa85b2a723a5ce6&oe=590EE48E">
+    </div>
+  </li>
+
+  <li class="three">
+    <p>everything else</p>
+    <div id="cake"><img src="https://scontent.xx.fbcdn.net/v/t1.0-9/14670848_1224988350905706_1779972746692542926_n.jpg?oh=2bd1b7723c5a5fc7d1b7be57033ed8ee&oe=58DCD5D0">
+    </div>
+  </li>
+
+</ul>
+
+
+
+    </section>
+  </body>
+
+</html>
